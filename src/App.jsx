@@ -18,22 +18,25 @@ function App() {
     // add total credit
     const isAlreadyAvailable = !!courseLists.find(courseList => courseList.id === course.id)
 
+    const newTotalCredit = totalCredits + course_credit;
 
 
+    if (newTotalCredit <= 20) {
+      
+      if (!isAlreadyAvailable) {
+        const newCourseLists = [...courseLists, course];
+        setCourseLists(newCourseLists);
+        setTotalCredits(newTotalCredit);
+        toast.success('Course added to list')
+      }
+      else {
+        toast.error('This course is already selected');
+      }
 
-    // console.log(course);
-
-
-
-    if (!isAlreadyAvailable) {
-      const newCourseLists = [...courseLists, course];
-      setCourseLists(newCourseLists);
-      toast.success('Course added to list')
     }
     else {
-      toast.error('This course is already selected');
+      toast.error('You cannot take more than 20 credit')
     }
-
 
 
   }
