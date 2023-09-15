@@ -10,7 +10,7 @@ const Course = ({ course, handleSubmitButton }) => {
                 <p>$ Price: {price}</p>
                 <p>Credit: {credit}</p>
             </div>
-            <button onClick={() => handleSubmitButton(course, credit)}
+            <button onClick={() => handleSubmitButton(course, credit, price)}
             className="p-btn w-full mx-auto">Select</button>
             
         </div>

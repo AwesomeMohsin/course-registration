@@ -9,6 +9,7 @@ const Course = ({ course, handleSubmitButton }) => {
             <div className="flex justify-between pb-4">
                 <p>$ Price: {price}</p>
                 <p>Credit: {credit}</p>
+                
             </div>
             <button onClick={() => handleSubmitButton(course, credit)}
             className="p-btn w-full mx-auto">Select</button>

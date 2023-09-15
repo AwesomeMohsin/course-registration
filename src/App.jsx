@@ -10,27 +10,47 @@ function App() {
 
   const [courseLists, setCourseLists] = useState([]);
   const [totalCredits, setTotalCredits] = useState(0);
+  const [remainingHour, setRemainingHour] = useState(20);
+  const [totalPrice, setTotalPrice] = useState(0);
 
 
 
-  const handleSubmitButton = (course, course_credit) => {
 
-    // add total credit
+  const handleSubmitButton = (course, course_credit, price) => {
+
+    console.log(price);
+
+    // check the course is already available or not
     const isAlreadyAvailable = !!courseLists.find(courseList => courseList.id === course.id)
 
+    // add total credit
     const newTotalCredit = totalCredits + course_credit;
+
+    // deduct remaining hour
+    const newRemainingHour = remainingHour - course_credit;
+
+    
 
 
     if (newTotalCredit <= 20) {
-      
-      if (!isAlreadyAvailable) {
-        const newCourseLists = [...courseLists, course];
-        setCourseLists(newCourseLists);
-        setTotalCredits(newTotalCredit);
-        toast.success('Course added to list')
+
+      if (remainingHour >= course_credit) {
+
+        if (!isAlreadyAvailable) {
+          const newCourseLists = [...courseLists, course];
+          setCourseLists(newCourseLists);
+          setTotalCredits(newTotalCredit);
+          setRemainingHour(newRemainingHour);
+          toast.success('Course added to list')
+        }
+
+        else {
+          toast.error('This course is already selected');
+        }
       }
+
       else {
-        toast.error('This course is already selected');
+        toast.error('You do not have any remaining hour')
       }
 
     }
@@ -56,6 +76,8 @@ function App() {
         <Details
           courseLists={courseLists}
           totalCredits={totalCredits}
+          remainingHour={remainingHour}
+          totalPrice={totalPrice}
         ></Details>
 
 
