@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/sFbGmny/course-1.png",
+    "title": "Web Development Fundamentals",
+    "description": "Master HTML, CSS, and JavaScript basics to create stunning websites and apps. Build a strong coding foundation.",
+    "credit": 4,
+    "price": 15000
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/MDQrHjX/course-2.png",
+    "title": "Python Programming for Beginners",
+    "description": "Start your coding journey with Python. Learn syntax, data structures, and problem-solving. Build real-world projects.",
+    "credit": 3,
+    "price": 12000
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/p13gjRN/course-3.png",
+    "title": "Machine Learning Essentials",
+    "description": "Explore machine learning basics. Understand algorithms, data analysis, and AI applications. Hands-on projects included.",
+    "credit": 4,
+    "price": 18000
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/x2Q5n3v/course-4.png",
+    "title": "Digital Marketing Mastery",
+    "description": "Become a digital marketing pro. Learn SEO, PPC, and content strategies. Boost online presence and revenue.",
+    "credit": 3,
+    "price": 16000
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/6gFCRZC/course-5.png",
+    "title": "Graphic Design Fundamentals",
+    "description": "Unleash your creativity. Master graphic design basics. Create stunning visuals for print and digital media.",
+    "credit": 3,
+    "price": 14000
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/vjWfBsw/course-6.png",
+    "title": "Data Science Bootcamp",
+    "description": "Dive into data science. Analyze data, build models, and draw insights. Real-world projects and data sets.",
+    "credit": 5,
+    "price": 22000
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/R3xTDck/course-7.png",
+    "title": "Mobile App Development",
+    "description": "Create mobile apps for iOS and Android. Learn app design build, coding, and awesome deployment.",
+    "credit": 4,
+    "price": 19000
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/c8R498t/course-8.png",
+    "title": "Artificial Intelligence in Healthcare",
+    "description": "Explore AI's impact on healthcare. Understand medical data analysis and AI-driven diagnostics products.",
+    "credit": 3,
+    "price": 22000
+  },
+  {
+    "id": 9,
+    "img": "https://i.ibb.co/17WzXgY/course-9.png",
+    "title": "Cybersecurity Essentials",
+    "description": "Defend digital assets. Learn cybersecurity strategies, threat detection, and ethical hacking fundamentals.",
+    "credit": 4,
+    "price": 17000
+  }
+]

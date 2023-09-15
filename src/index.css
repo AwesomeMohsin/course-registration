@@ -4,6 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   font-family: 'Inter', sans-serif;
+  background-color: #F3F3F3;
+}
+
+.text-t {
+  color: #1C1B1B;
+  font-weight: 600;
+}
+
+.text-t2{
+  color: rgba(28, 27, 27, 0.80)
+}
+
+.text-p {
+  color: rgba(28, 27, 27, 0.60);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.p-btn {
+  background-color: #2F80ED;
+  border-radius: 8px;
+  border: 1px solid #2F80ED;
+  padding: 10px;
+  color: white;
+
 }
