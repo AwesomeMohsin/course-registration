@@ -30,6 +30,8 @@ function App() {
     const newRemainingHour = remainingHour - course_credit;
 
     
+    const newtotalPrice = totalPrice + price;
+    
 
 
     if (newTotalCredit <= 20) {
@@ -41,6 +43,7 @@ function App() {
           setCourseLists(newCourseLists);
           setTotalCredits(newTotalCredit);
           setRemainingHour(newRemainingHour);
+          setTotalPrice(newtotalPrice);
           toast.success('Course added to list')
         }
 
