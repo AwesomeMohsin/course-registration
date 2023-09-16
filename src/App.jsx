@@ -29,7 +29,7 @@ function App() {
     // deduct remaining hour
     const newRemainingHour = remainingHour - course_credit;
 
-    
+    // add total price
     const newtotalPrice = totalPrice + price;
     
 
@@ -70,7 +70,7 @@ function App() {
     <>
       <Header></Header>
 
-      <div className='flex container mx-auto gap-6'>
+      <div className='flex container mx-auto gap-1 md:gap-6'>
 
         <Courses
           handleSubmitButton={handleSubmitButton}

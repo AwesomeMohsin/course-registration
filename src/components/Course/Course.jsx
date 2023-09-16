@@ -12,12 +12,12 @@ const Course = ({ course, handleSubmitButton }) => {
             <h3 className="font-semibold text-t text-lg pb-4">{title}</h3>
             <p className="text-p text-sm text-left pb-4">{description}</p>
             <div className="flex justify-between pb-4">
-                <div className='flex gap-3'>
+                <div className='flex md:gap-3'>
                     <FiDollarSign className='text-2xl'></FiDollarSign>
                     <p className='text-p font-medium'> Price : {price}</p>
                 </div>
                 
-                <div className='flex gap-3'>
+                <div className='flex md:gap-3'>
                     <GoBook className='text-3xl'></GoBook>
                     <p className='text-p font-medium'> Credit : {credit}hr</p>
                 </div>

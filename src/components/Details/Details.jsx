@@ -2,7 +2,7 @@ import Detail from "../Detail/Detail";
 
 const Details = ({ courseLists, totalCredits, remainingHour, totalPrice }) => {
     return (
-        <div className="w-1/4 p-6 bg-white rounded-xl text-left ">
+        <div className="w-1/3 md:w-1/4 p-6 bg-white rounded-xl text-left h-fit">
 
             <h4 className="font-bold text-lg text-[#2F80ED] pb-4">Credit Hour Remaining {remainingHour} hr</h4>
 
