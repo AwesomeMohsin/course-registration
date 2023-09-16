@@ -30,5 +30,7 @@ body {
   border: 1px solid #2F80ED;
   padding: 10px;
   color: white;
+  font-weight: 600;
+  font-size: 18px;
 
 }
