@@ -18,8 +18,6 @@ function App() {
 
   const handleSubmitButton = (course, course_credit, price) => {
 
-    console.log(price);
-
     // check the course is already available or not
     const isAlreadyAvailable = !!courseLists.find(courseList => courseList.id === course.id)
 

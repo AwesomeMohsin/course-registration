@@ -10,6 +10,13 @@
 
 ## How I managed the state in my assignment project
 
-- 
+- "In the project, I begin by initializing the application's state using the 'useState' function within the 'App.jsx' file. Afterward, I create a handler function. Subsequently, I transmit this state as properties (props) to the 'Cards.jsx' component.
 
-Live Link: http://awesome-course-registration.surge.sh/
+In the 'Card.jsx' component, I utilize an 'onClick' event associated with a button. When this button is clicked, it triggers a callback function. Within this callback function, I pass the card prop, which contains all the required data.
+
+Following this step, I forward this data to the 'Details.jsx' component for the purpose of displaying the title in the project's details."
+
+
+
+
+Live Link: https://awesome-course-registration.surge.sh/
